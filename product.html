@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--    Rajagopal,Divya    Account:jadrn028
+            CS645, Spring 2015
+            Project #3
+    -->   
+    <meta charset="utf-8">  
+
+	<title>Fashion & Me Products</title>
+	
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+     <link rel="stylesheet" type="text/css" 
+    href="jquery-ui-1.11.4.custom/jquery-ui.min.css" />             
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="javaScriptStore.js"></script>
+    <script type="text/javascript" src="ajax_get_lib.js"></script>
+    <script type="text/javascript" src="shopping_cart.js"></script>
+   
+    
+</head>
+    <body>
+             <ul class="navigation">
+                <li class="heading"><a href="../proj3.html">Fashion & Me</a> </li>             
+                <li><a id="special" href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart:&nbsp;<span class="count"></span>&nbsp;items</a></li>
+                <li><a href="../proj3.html#footer">Contact Us</a></li> 
+            </ul>
+       
+        <div id="finddiv">
+        <input type="text" placeholder="Search by Keyword" id="find" />
+        <button id="search">Search</button>
+        </div>
+        
+        <div>
+        <div id="filter">
+        <div id="filteravail" class="fil">Filter by Availability</div>
+        <div id="availpanel" class="panel">
+            <ul>
+            <li id="avail1">In Stock </li>
+            <li id="avail2">Not In Stock</li>
+            <li id="avail3">All</li>
+            </ul>
+        </div>
+        <div id="filterprice" class="fil">Filter by price</div>
+        <div id="pricepanel" class="panel">
+            <ul>
+            <li id="p1">5$ to 50$</li>
+            <li id="p2" >50$ to 100$</li>
+            <li id="p3">100$ to 500$</li>
+            <li id="p4">500$ to 1000$</li>
+            <li id="p5">1000$ to 1500$</li>
+            <li id="p6">1500$ to 2000$</li>
+            </ul>
+        </div>
+        <div id ="filtermaterial" class="fil">Filter by material</div>
+        <div id="materialpanel" class="panel">
+            <ul>
+            <li id="m1">Silver</li>
+            <li id="m2" >Gold</li>
+            <li id="m3">Diamond</li>
+            <li id="m4">Emerald</li>
+            <li id="m5">Crystal</li>
+            <li id="m6">Zirconia</li>
+            </ul>
+        </div>
+        <div id = "filtervendor" class="fil"> Filter by vendor</div>
+        <div id="vendorpanel" class="panel"></div>
+        <div id ="filtertype" class="fil">Filter by type</div>
+        <div id="typepanel" class="panel"></div>
+        </div>
+         <div id="products">           
+        </div>
+            <div id="noresult"> The search Criteria does not match any of our Items. Please change the search criteria</div>
+            <div class="clear"></div>
+       
+        </div>
+        
+        
+       
+        
+       
+        <div id="dialog-modal" class="widget-dialog-container" title="View Product Details">
+            <div id="basicinfo">
+                <div id="leftpane">
+                   
+                    <div id="bigimage"></div>
+                </div>
+                <div id ="rightpane">
+                    <ul>
+                         <li id="model"></li>
+                        <li id="category"></li>
+                        <li id="vendor"></li>
+                        <li id="price"></li>                        
+                    </ul>
+                    <div id="buttonholder"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="extrainfo">
+                <p id="description"></p>
+                <p id="features"></p>
+            </div>
+        </div>
+     
+    </body>   
+ </html>

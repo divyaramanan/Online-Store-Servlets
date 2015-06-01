@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--    Rajagopal,Divya    Account:jadrn028
+            CS645, Spring 2015
+            Project #3
+    -->   
+    <meta charset="utf-8">  
+
+	<title>Fashion & Me Products</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+     <link rel="stylesheet" type="text/css" 
+    href="jquery-ui-1.11.4.custom/jquery-ui.min.css" />             
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="carthandle.js"></script>
+    <script type="text/javascript" src="shopping_cart.js"></script>
+    <script type="text/javascript" src="ajax_get_lib.js"></script>
+    <script type="text/javascript" src="javaScriptStore.js"></script>
+    
+</head>
+    <body id="cartbody">
+        <ul class="navigation">
+                <li class="heading"><a href="../proj3.html">Fashion & Me</a> </li>             
+                <li><a id="special" href="product.html">Products</a></li>
+                 <li><a href="cart.html">Cart:&nbsp;<span class="count"></span>&nbsp;items</a></li>
+                <li><a href="../proj3.html#footer">Contact Us</a></li> 
+            </ul>
+        <h3>SHOPPING CART</h3>
+        <div id="addedproducts"></div>
+        <div id="emptycart">
+	<h4>Your shopping cart is empty, but it doesn't have to be.</h4>
+	<p>
+	There are lots of great deals and one-of-a-kind items just waiting for you.
+Start shopping, and look for the "Add to cart" button. You can add several items to your cart from different sellers
+ and pay for them all at once.
+	</p>
+        <a href="product.html"><button id="startshop">Start Shopping</button></a>
+	</div>
+        <div id="cartbuttons">
+             <a href="product.html"><button class="continue">Continue Shopping</button></a>
+            <input type ="submit" id="checkout" value="CheckOut Now">
+        </div>
+         
+    </body>
+</html>
