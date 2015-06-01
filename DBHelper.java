@@ -16,8 +16,7 @@ import java.sql.*;
     to perform calculations on int data, or manipulate a date, you'll need to convert the
     field to that type.
     
-    Alan Riggins
-    CS645, Spring 2014
+   
 */    
     
 
